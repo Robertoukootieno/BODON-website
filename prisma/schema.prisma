@@ -1,0 +1,164 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  firstName String
+  lastName  String
+  phone     String?
+  avatar    String?
+  role      Role     @default(USER)
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  bookings Booking[]
+  reviews  Review[]
+
+  @@map("users")
+}
+
+model TourCategory {
+  id          String @id @default(cuid())
+  name        String @unique
+  slug        String @unique
+  description String
+  image       String
+
+  tours Tour[]
+
+  @@map("tour_categories")
+}
+
+model Tour {
+  id               String       @id @default(cuid())
+  title            String
+  slug             String       @unique
+  description      String
+  shortDescription String
+  images           String[]
+  price            Float
+  duration         Int // in days
+  maxGroupSize     Int
+  difficulty       Difficulty
+  categoryId       String
+  location         String
+  highlights       String[]
+  included         String[]
+  excluded         String[]
+  itinerary        Json // ItineraryDay[]
+  isActive         Boolean      @default(true)
+  featured         Boolean      @default(false)
+  rating           Float        @default(0)
+  reviewCount      Int          @default(0)
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+
+  category TourCategory @relation(fields: [categoryId], references: [id])
+  bookings Booking[]
+  reviews  Review[]
+
+  @@map("tours")
+}
+
+model Booking {
+  id               String        @id @default(cuid())
+  userId           String
+  tourId           String
+  startDate        DateTime
+  endDate          DateTime
+  adults           Int
+  children         Int           @default(0)
+  totalPrice       Float
+  status           BookingStatus @default(PENDING)
+  paymentStatus    PaymentStatus @default(PENDING)
+  paymentMethod    PaymentMethod?
+  specialRequests  String?
+  emergencyContact Json // EmergencyContact
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  user     User      @relation(fields: [userId], references: [id])
+  tour     Tour      @relation(fields: [tourId], references: [id])
+  payments Payment[]
+
+  @@map("bookings")
+}
+
+model Payment {
+  id            String        @id @default(cuid())
+  bookingId     String
+  amount        Float
+  currency      String        @default("KES")
+  method        PaymentMethod
+  status        PaymentStatus @default(PENDING)
+  transactionId String?
+  metadata      Json?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  booking Booking @relation(fields: [bookingId], references: [id])
+
+  @@map("payments")
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  userId     String
+  tourId     String
+  rating     Int // 1-5
+  title      String
+  comment    String
+  images     String[]
+  isVerified Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+  tour Tour @relation(fields: [tourId], references: [id])
+
+  @@unique([userId, tourId])
+  @@map("reviews")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum Difficulty {
+  EASY
+  MODERATE
+  CHALLENGING
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+enum PaymentMethod {
+  MPESA
+  PAYPAL
+  STRIPE
+  BANK_TRANSFER
+}
