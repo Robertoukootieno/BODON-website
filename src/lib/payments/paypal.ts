@@ -79,7 +79,7 @@ export async function createOrder({
       application_context: {
         return_url: returnUrl,
         cancel_url: cancelUrl,
-        brand_name: 'Bodnon Expedition Kenya',
+        brand_name: 'Bodon Expedition Kenya',
         landing_page: 'BILLING',
         user_action: 'PAY_NOW',
       },

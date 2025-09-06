@@ -13,7 +13,7 @@ const testimonials = [
     location: 'United States',
     avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
     rating: 5,
-    comment: 'Our Maasai Mara safari with Bodnon Expedition was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw the Big Five. Highly recommend!',
+    comment: 'Our Maasai Mara safari with Bodon Expedition was absolutely incredible! The guides were knowledgeable, the accommodations were perfect, and we saw the Big Five. Highly recommend!',
     tour: 'Maasai Mara Safari'
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     location: 'United Kingdom',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
     rating: 5,
-    comment: 'Climbing Mount Kenya was a dream come true. The team at Bodnon Expedition made sure we were safe and well-prepared. The views from the summit were breathtaking!',
+    comment: 'Climbing Mount Kenya was a dream come true. The team at Bodon Expedition made sure we were safe and well-prepared. The views from the summit were breathtaking!',
     tour: 'Mount Kenya Climbing'
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     location: 'Spain',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80',
     rating: 5,
-    comment: 'The cultural tour was amazing! We learned so much about Kenyan traditions and the local communities. The beaches in Diani were paradise. Thank you, Bodnon Expedition!',
+    comment: 'The cultural tour was amazing! We learned so much about Kenyan traditions and the local communities. The beaches in Diani were paradise. Thank you, Bodon Expedition!',
     tour: 'Cultural & Beach Tour'
   },
   {

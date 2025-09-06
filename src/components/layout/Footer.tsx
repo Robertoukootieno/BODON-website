@@ -100,13 +100,13 @@ export default function Footer() {
                 <span className="text-white font-bold text-xl">B</span>
               </div>
               <div>
-                <h2 className="text-xl font-bold">Bodnon Expedition</h2>
+                <h2 className="text-xl font-bold">Bodon Expedition</h2>
                 <p className="text-xs text-neutral-400">Discover Kenya's Beauty</p>
               </div>
             </Link>
             
             <p className="text-neutral-400 mb-6 text-sm leading-relaxed">
-              Experience the magic of Kenya with our expertly crafted tours. From thrilling safaris to cultural adventures, we create unforgettable memories that last a lifetime.
+              Experience the magic of Kenya with our expertly crafted expeditions. From thrilling safaris to cultural adventures, we create unforgettable memories that last a lifetime.
             </p>
             
             <div className="space-y-3">
@@ -120,7 +120,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-secondary-400 flex-shrink-0" />
-                <span className="text-sm text-neutral-400">info@bodnonexpedition.com</span>
+                <span className="text-sm text-neutral-400">info@bodonexpedition.com</span>
               </div>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function Footer() {
         <div className="container-max py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-neutral-400">
-              © {new Date().getFullYear()} Bodnon Expedition Kenya. All rights reserved.
+              © {new Date().getFullYear()} Bodon Expedition Kenya. All rights reserved.
             </p>
             
             <div className="flex items-center space-x-4">
