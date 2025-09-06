@@ -21,6 +21,13 @@ const footerLinks = {
     { name: 'Beach Tours', href: '/tours?category=beach' },
     { name: 'Mountain Climbing', href: '/tours?category=mountain' },
   ],
+  carRental: [
+    { name: 'Economy Cars', href: '/car-rental?category=economy' },
+    { name: 'SUVs', href: '/car-rental?category=suv' },
+    { name: '4WD Safari', href: '/car-rental?category=4wd' },
+    { name: 'Vans', href: '/car-rental?category=van' },
+    { name: 'Luxury Vehicles', href: '/car-rental?category=luxury' },
+  ],
   company: [
     { name: 'About Us', href: '/about' },
     { name: 'Our Team', href: '/about#team' },
@@ -131,7 +138,24 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.tours.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
+                    href={link.href}
+                    className="text-sm text-neutral-400 hover:text-secondary-400 transition-colors duration-200"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Car Rental */}
+          <div>
+            <h3 className="font-semibold text-white mb-4">Car Rental</h3>
+            <ul className="space-y-2">
+              {footerLinks.carRental.map((link) => (
+                <li key={link.name}>
+                  <Link
                     href={link.href}
                     className="text-sm text-neutral-400 hover:text-secondary-400 transition-colors duration-200"
                   >

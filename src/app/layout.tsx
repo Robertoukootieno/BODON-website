@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | Bodon Expedition Kenya'
   },
   description: 'Discover Kenya\'s beauty with Bodon Expedition - Your premier safari and adventure expedition company based in Nairobi. Book authentic Kenyan experiences with secure payment options.',
-  keywords: ['Kenya expeditions', 'safari', 'Nairobi tours', 'Kenya travel', 'adventure expeditions', 'wildlife safari', 'Kenya tourism'],
+  keywords: ['Kenya expeditions', 'safari', 'Nairobi tours', 'Kenya travel', 'adventure expeditions', 'wildlife safari', 'Kenya tourism', 'car rental Kenya', 'vehicle rental Nairobi', 'SUV rental', '4WD rental'],
   authors: [{ name: 'Bodon Expedition Kenya' }],
   creator: 'Bodon Expedition Kenya',
   publisher: 'Bodon Expedition Kenya',
