@@ -6,7 +6,7 @@ import TourSearch from '@/components/tours/TourSearch'
 
 export const metadata = {
   title: 'Tours - Discover Kenya\'s Best Adventures',
-  description: 'Browse our collection of carefully curated tours across Kenya. From safari adventures to cultural experiences, find your perfect Kenyan journey.',
+  description: 'Browse our collection of carefully curated tours across Kenya. From safari adventures to cultural experiences, find your perfect Kenyan journey with Bodnon Expedition.',
 }
 
 export default function ToursPage() {

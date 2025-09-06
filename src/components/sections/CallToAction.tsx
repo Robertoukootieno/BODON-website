@@ -72,7 +72,7 @@ export default function CallToAction() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-secondary-400" />
-                <span>info@bodontours.com</span>
+                <span>info@bodnonexpedition.com</span>
               </div>
             </div>
           </motion.div>

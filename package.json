@@ -1,7 +1,7 @@
 {
-  "name": "bodon-tours",
+  "name": "bodnon-expedition",
   "version": "1.0.0",
-  "description": "Modern tour company website for Bodon Tours Kenya",
+  "description": "Modern tour company website for Bodnon Expedition Kenya",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -69,6 +69,6 @@
     "nextjs",
     "react"
   ],
-  "author": "Bodon Tours Kenya",
+  "author": "Bodnon Expedition Kenya",
   "license": "MIT"
 }

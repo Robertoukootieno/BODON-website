@@ -17,14 +17,14 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bodon Tours Kenya - Discover Kenya\'s Beauty',
-    template: '%s | Bodon Tours Kenya'
+    default: 'Bodnon Expedition Kenya - Discover Kenya\'s Beauty',
+    template: '%s | Bodnon Expedition Kenya'
   },
-  description: 'Discover Kenya\'s beauty with Bodon Tours - Your premier safari and adventure travel company based in Nairobi. Book authentic Kenyan experiences with secure payment options.',
+  description: 'Discover Kenya\'s beauty with Bodnon Expedition - Your premier safari and adventure travel company based in Nairobi. Book authentic Kenyan experiences with secure payment options.',
   keywords: ['Kenya tours', 'safari', 'Nairobi tours', 'Kenya travel', 'adventure tours', 'wildlife safari', 'Kenya tourism'],
-  authors: [{ name: 'Bodon Tours Kenya' }],
-  creator: 'Bodon Tours Kenya',
-  publisher: 'Bodon Tours Kenya',
+  authors: [{ name: 'Bodnon Expedition Kenya' }],
+  creator: 'Bodnon Expedition Kenya',
+  publisher: 'Bodnon Expedition Kenya',
   formatDetection: {
     email: false,
     address: false,
@@ -38,22 +38,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'Bodon Tours Kenya - Discover Kenya\'s Beauty',
-    description: 'Discover Kenya\'s beauty with Bodon Tours - Your premier safari and adventure travel company based in Nairobi.',
-    siteName: 'Bodon Tours Kenya',
+    title: 'Bodnon Expedition Kenya - Discover Kenya\'s Beauty',
+    description: 'Discover Kenya\'s beauty with Bodnon Expedition - Your premier safari and adventure travel company based in Nairobi.',
+    siteName: 'Bodnon Expedition Kenya',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Bodon Tours Kenya',
+        alt: 'Bodnon Expedition Kenya',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bodon Tours Kenya - Discover Kenya\'s Beauty',
-    description: 'Discover Kenya\'s beauty with Bodon Tours - Your premier safari and adventure travel company based in Nairobi.',
+    title: 'Bodnon Expedition Kenya - Discover Kenya\'s Beauty',
+    description: 'Discover Kenya\'s beauty with Bodnon Expedition - Your premier safari and adventure travel company based in Nairobi.',
     images: ['/images/og-image.jpg'],
   },
   robots: {

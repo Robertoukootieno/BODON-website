@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Why Choose Bodon Tours?
+            Why Choose Bodnon Expedition?
           </h2>
           <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
             With years of experience and a passion for showcasing Kenya's beauty, we provide exceptional service that creates unforgettable memories.

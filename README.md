@@ -1,4 +1,4 @@
-# Bodon Tours Kenya
+# Bodnon Expedition Kenya
 
 A modern, professional tour company website built with Next.js 14, featuring secure payment integration including M-Pesa, PayPal, and credit card processing.
 
@@ -38,7 +38,7 @@ A modern, professional tour company website built with Next.js 14, featuring sec
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd bodon-tours
+cd bodnon-expedition
 ```
 
 2. Install dependencies:
@@ -123,4 +123,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For support, email info@bodontours.com or create an issue in this repository.
+For support, email info@bodnonexpedition.com or create an issue in this repository.

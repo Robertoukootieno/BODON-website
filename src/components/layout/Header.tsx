@@ -31,7 +31,7 @@ export default function Header() {
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="w-4 h-4" />
-                <span>info@bodontours.com</span>
+                <span>info@bodnonexpedition.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-1">
@@ -51,7 +51,7 @@ export default function Header() {
               <span className="text-white font-bold text-xl">B</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gradient">Bodon Tours</h1>
+              <h1 className="text-2xl font-bold text-gradient">Bodnon Expedition</h1>
               <p className="text-xs text-neutral-600">Discover Kenya's Beauty</p>
             </div>
           </Link>
