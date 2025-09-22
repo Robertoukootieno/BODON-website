@@ -16,7 +16,7 @@ const featuredTours = [
     slug: 'maasai-mara-safari',
     shortDescription: 'Experience the Great Migration and witness the Big Five in Kenya\'s most famous game reserve.',
     image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 1200,
+    price: 175000,
     duration: 4,
     maxGroupSize: 8,
     rating: 4.9,
@@ -29,7 +29,7 @@ const featuredTours = [
     slug: 'mount-kenya-climbing',
     shortDescription: 'Conquer Africa\'s second-highest peak with breathtaking views and challenging trails.',
     image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 800,
+    price: 120000,
     duration: 6,
     maxGroupSize: 12,
     rating: 4.8,
@@ -42,7 +42,7 @@ const featuredTours = [
     slug: 'diani-beach-culture',
     shortDescription: 'Relax on pristine beaches while exploring Swahili culture and coastal traditions.',
     image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 600,
+    price: 90000,
     duration: 5,
     maxGroupSize: 15,
     rating: 4.7,
@@ -122,7 +122,7 @@ export default function FeaturedTours() {
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-2xl font-bold text-primary-600">
-                        ${tour.price}
+                        KES {tour.price.toLocaleString()}
                       </span>
                       <span className="text-neutral-500 text-sm ml-1">per person</span>
                     </div>

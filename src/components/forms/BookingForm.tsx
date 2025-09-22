@@ -10,19 +10,19 @@ import Input from '@/components/ui/Input'
 type ServiceType = 'tour' | 'car-rental'
 
 const tourOptions = [
-  { id: 'safari', name: 'Safari Tours', price: 150 },
-  { id: 'cultural', name: 'Cultural Tours', price: 80 },
-  { id: 'adventure', name: 'Adventure Tours', price: 120 },
-  { id: 'beach', name: 'Beach Tours', price: 100 },
-  { id: 'mountain', name: 'Mountain Climbing', price: 200 }
+  { id: 'safari', name: 'Safari Tours', price: 22000 },
+  { id: 'cultural', name: 'Cultural Tours', price: 12000 },
+  { id: 'adventure', name: 'Adventure Tours', price: 18000 },
+  { id: 'beach', name: 'Beach Tours', price: 15000 },
+  { id: 'mountain', name: 'Mountain Climbing', price: 30000 }
 ]
 
 const carRentalOptions = [
-  { id: 'economy', name: 'Economy Car', price: 35 },
-  { id: 'suv', name: 'SUV', price: 65 },
-  { id: '4wd', name: '4WD Safari Vehicle', price: 120 },
-  { id: 'van', name: 'Van', price: 85 },
-  { id: 'luxury', name: 'Luxury Vehicle', price: 150 }
+  { id: 'economy', name: 'Economy Car', price: 5000 },
+  { id: 'suv', name: 'SUV', price: 9500 },
+  { id: '4wd', name: '4WD Safari Vehicle', price: 17500 },
+  { id: 'van', name: 'Van', price: 12500 },
+  { id: 'luxury', name: 'Luxury Vehicle', price: 22000 }
 ]
 
 export default function BookingForm() {
@@ -138,7 +138,7 @@ export default function BookingForm() {
             <option value="">Select an option...</option>
             {currentOptions.map((option) => (
               <option key={option.id} value={option.id}>
-                {option.name} - ${option.price}/{serviceType === 'tour' ? 'person' : 'day'}
+                {option.name} - KES {option.price.toLocaleString()}/{serviceType === 'tour' ? 'person' : 'day'}
               </option>
             ))}
           </select>
@@ -247,7 +247,7 @@ export default function BookingForm() {
               </div>
               <div className="flex justify-between">
                 <span>Price per {serviceType === 'tour' ? 'person' : 'day'}:</span>
-                <span>${selectedOptionData.price}</span>
+                <span>KES {selectedOptionData.price.toLocaleString()}</span>
               </div>
               {serviceType === 'tour' && (
                 <div className="flex justify-between">
@@ -258,7 +258,7 @@ export default function BookingForm() {
               <div className="border-t pt-2 mt-2">
                 <div className="flex justify-between text-lg font-bold">
                   <span>Total:</span>
-                  <span className="text-primary-600">${calculateTotal()}</span>
+                  <span className="text-primary-600">KES {calculateTotal().toLocaleString()}</span>
                 </div>
               </div>
             </div>

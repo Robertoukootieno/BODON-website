@@ -55,7 +55,7 @@ async function getAccessToken(): Promise<string> {
 
 export async function createOrder({
   amount,
-  currency = 'USD',
+  currency = 'KES',
   description = 'Tour booking payment',
   returnUrl,
   cancelUrl,

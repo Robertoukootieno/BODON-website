@@ -17,7 +17,7 @@ export interface CreatePaymentIntentParams {
 
 export async function createPaymentIntent({
   amount,
-  currency = 'usd',
+  currency = 'kes',
   metadata = {},
   customerId,
 }: CreatePaymentIntentParams) {

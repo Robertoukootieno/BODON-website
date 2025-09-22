@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
     const result = await createOrder({
       amount,
-      currency: currency || 'USD',
+      currency: currency || 'KES',
       description: description || 'Tour booking payment',
       returnUrl,
       cancelUrl,

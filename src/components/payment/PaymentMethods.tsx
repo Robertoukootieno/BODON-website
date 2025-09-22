@@ -49,7 +49,7 @@ export default function PaymentMethods({
   selectedMethod,
   onMethodSelect,
   amount,
-  currency = 'USD',
+  currency = 'KES',
   onProceed,
   loading = false,
 }: PaymentMethodsProps) {

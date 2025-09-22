@@ -119,11 +119,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-secondary-400 flex-shrink-0" />
-                <span className="text-sm text-neutral-400">Nairobi, Kenya</span>
+                <span className="text-sm text-neutral-400">P.O Box 26872, G.P.O Nairobi, Kenya</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-secondary-400 flex-shrink-0" />
-                <span className="text-sm text-neutral-400">+254-XXX-XXXXXX</span>
+                <span className="text-sm text-neutral-400">+254-758270982</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-secondary-400 flex-shrink-0" />

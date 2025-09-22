@@ -16,7 +16,7 @@ const tours = [
     slug: 'maasai-mara-safari',
     shortDescription: 'Experience the Great Migration and witness the Big Five in Kenya\'s most famous game reserve.',
     image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 1200,
+    price: 175000,
     duration: 4,
     maxGroupSize: 8,
     rating: 4.9,
@@ -31,7 +31,7 @@ const tours = [
     slug: 'mount-kenya-climbing',
     shortDescription: 'Conquer Africa\'s second-highest peak with breathtaking views and challenging trails.',
     image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 800,
+    price: 120000,
     duration: 6,
     maxGroupSize: 12,
     rating: 4.8,
@@ -46,7 +46,7 @@ const tours = [
     slug: 'diani-beach-culture',
     shortDescription: 'Relax on pristine beaches while exploring Swahili culture and coastal traditions.',
     image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 600,
+    price: 90000,
     duration: 5,
     maxGroupSize: 15,
     rating: 4.7,
@@ -61,7 +61,7 @@ const tours = [
     slug: 'amboseli-elephant-safari',
     shortDescription: 'Get up close with elephants against the backdrop of Mount Kilimanjaro.',
     image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 950,
+    price: 140000,
     duration: 3,
     maxGroupSize: 10,
     rating: 4.8,
@@ -76,7 +76,7 @@ const tours = [
     slug: 'lake-nakuru-flamingo',
     shortDescription: 'Witness thousands of flamingos and diverse wildlife in this beautiful lake ecosystem.',
     image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 450,
+    price: 65000,
     duration: 2,
     maxGroupSize: 20,
     rating: 4.6,
@@ -91,7 +91,7 @@ const tours = [
     slug: 'samburu-cultural-experience',
     shortDescription: 'Immerse yourself in the rich traditions of the Samburu people and their unique way of life.',
     image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 750,
+    price: 110000,
     duration: 4,
     maxGroupSize: 12,
     rating: 4.9,
@@ -189,7 +189,7 @@ export default function TourGrid() {
           <div className="flex items-center justify-between">
             <div>
               <span className="text-2xl font-bold text-primary-600">
-                ${tour.price}
+                KES {tour.price.toLocaleString()}
               </span>
               <span className="text-neutral-500 text-sm ml-1">per person</span>
             </div>

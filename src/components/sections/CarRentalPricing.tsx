@@ -9,7 +9,7 @@ const pricingPlans = [
   {
     name: 'Economy',
     description: 'Perfect for city driving and short trips',
-    price: '$35',
+    price: 'KES 5,000',
     period: 'per day',
     popular: false,
     vehicles: ['Toyota Corolla', 'Nissan Sunny', 'Suzuki Swift'],
@@ -25,7 +25,7 @@ const pricingPlans = [
   {
     name: 'SUV',
     description: 'Ideal for families and light adventures',
-    price: '$65',
+    price: 'KES 9,500',
     period: 'per day',
     popular: true,
     vehicles: ['Toyota RAV4', 'Nissan X-Trail', 'Honda CR-V'],
@@ -42,7 +42,7 @@ const pricingPlans = [
   {
     name: '4WD Safari',
     description: 'Built for safari and rough terrain',
-    price: '$120',
+    price: 'KES 17,500',
     period: 'per day',
     popular: false,
     vehicles: ['Toyota Land Cruiser', 'Mitsubishi Pajero', 'Nissan Patrol'],
@@ -60,12 +60,12 @@ const pricingPlans = [
 ]
 
 const additionalServices = [
-  { name: 'Additional Driver', price: '$10/day' },
-  { name: 'GPS Navigation', price: '$5/day' },
-  { name: 'Child Safety Seat', price: '$8/day' },
-  { name: 'Professional Driver', price: '$50/day' },
+  { name: 'Additional Driver', price: 'KES 1,500/day' },
+  { name: 'GPS Navigation', price: 'KES 750/day' },
+  { name: 'Child Safety Seat', price: 'KES 1,200/day' },
+  { name: 'Professional Driver', price: 'KES 7,500/day' },
   { name: 'Airport Pickup/Drop-off', price: 'Free' },
-  { name: 'Fuel Service', price: '$15/tank' }
+  { name: 'Fuel Service', price: 'KES 2,200/tank' }
 ]
 
 export default function CarRentalPricing() {
