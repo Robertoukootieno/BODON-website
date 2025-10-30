@@ -7,6 +7,22 @@ import Link from 'next/link'
 
 const pricingPlans = [
   {
+    name: 'Compact',
+    description: 'Perfect for city driving and tight spaces',
+    price: 'KES 4,500',
+    period: 'per day',
+    popular: false,
+    vehicles: ['Toyota Vitz', 'Suzuki Alto', 'Hyundai i10'],
+    features: [
+      'Manual transmission',
+      'Air conditioning',
+      'Radio/CD player',
+      'Basic insurance included',
+      'Fuel efficient',
+      '24/7 support'
+    ]
+  },
+  {
     name: 'Economy',
     description: 'Perfect for city driving and short trips',
     price: 'KES 5,000',

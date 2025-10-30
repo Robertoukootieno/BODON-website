@@ -38,18 +38,18 @@ const vehicles = [
   },
   {
     id: 3,
-    name: 'Toyota Land Cruiser',
-    category: '4WD',
+    name: 'Toyota Vitz',
+    category: 'Compact',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.09.jpeg',
-    price: 17500,
+    price: 4500,
     period: 'per day',
     features: {
-      passengers: 7,
-      luggage: 6,
-      transmission: 'Automatic',
-      fuel: 'Diesel'
+      passengers: 5,
+      luggage: 2,
+      transmission: 'Manual',
+      fuel: 'Petrol'
     },
-    description: 'Perfect for safari adventures and rough terrain exploration.'
+    description: 'Compact and agile car perfect for city driving and tight spaces.'
   },
   {
     id: 4,
