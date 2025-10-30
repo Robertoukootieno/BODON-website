@@ -4,14 +4,13 @@ import { motion } from 'framer-motion'
 import { Users, Luggage, Fuel, Settings } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Link from 'next/link'
-import { formatKESPrice } from '@/lib/utils'
 
 const vehicles = [
   {
     id: 1,
     name: 'Toyota Corolla',
     category: 'Economy',
-    image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/images/Toyota Corolla.png',
     price: 5000,
     period: 'per day',
     features: {
@@ -26,7 +25,7 @@ const vehicles = [
     id: 2,
     name: 'Toyota RAV4',
     category: 'SUV',
-    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/images/Toyota RAV4.jpg',
     price: 9500,
     period: 'per day',
     features: {
@@ -41,7 +40,7 @@ const vehicles = [
     id: 3,
     name: 'Toyota Land Cruiser',
     category: '4WD',
-    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.09.jpeg',
     price: 17500,
     period: 'per day',
     features: {
@@ -56,7 +55,7 @@ const vehicles = [
     id: 4,
     name: 'Toyota Hiace Van',
     category: 'Van',
-    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10.jpeg',
     price: 12000,
     period: 'per day',
     features: {
@@ -71,7 +70,7 @@ const vehicles = [
     id: 5,
     name: 'Nissan X-Trail',
     category: 'SUV',
-    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (1).jpeg',
     price: 8000,
     period: 'per day',
     features: {
@@ -86,7 +85,7 @@ const vehicles = [
     id: 6,
     name: 'Mercedes Sprinter',
     category: 'Luxury Van',
-    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (2).jpeg',
     price: 22000,
     period: 'per day',
     features: {
@@ -142,23 +141,13 @@ export default function CarFleet() {
               </div>
 
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-1">
-                      {vehicle.name}
-                    </h3>
-                    <p className="text-neutral-600 text-sm">
-                      {vehicle.description}
-                    </p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-bold text-primary-600">
-                      {formatKESPrice(vehicle.price)}
-                    </div>
-                    <div className="text-sm text-neutral-500">
-                      {vehicle.period}
-                    </div>
-                  </div>
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-neutral-900 mb-1">
+                    {vehicle.name}
+                  </h3>
+                  <p className="text-neutral-600 text-sm">
+                    {vehicle.description}
+                  </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 mb-6">
