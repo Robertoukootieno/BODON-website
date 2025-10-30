@@ -11,7 +11,7 @@ const stats = [
     description: 'Satisfied customers from around the world'
   },
   {
-    number: 15,
+    number: 16,
     suffix: '+',
     label: 'Years Experience',
     description: 'Serving adventurers since 2009'

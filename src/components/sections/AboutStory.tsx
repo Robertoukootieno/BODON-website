@@ -29,15 +29,15 @@ const milestones = [
     icon: Award
   },
   {
-    year: '2020',
+    year: '2023',
     title: 'Digital Innovation',
     description: 'Launched online booking platform and expanded car rental services.',
     icon: Calendar
   },
   {
-    year: '2024',
+    year: '2025',
     title: 'New Horizons',
-    description: 'Celebrating 15 years of excellence with expanded services and international partnerships.',
+    description: 'Celebrating 16 years of excellence with expanded services and international partnerships.',
     icon: Award
   }
 ]
@@ -105,7 +105,7 @@ export default function AboutStory() {
             {/* Floating Stats */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 border border-neutral-100">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 mb-1">15+</div>
+                <div className="text-3xl font-bold text-primary-600 mb-1">16+</div>
                 <div className="text-sm text-neutral-600">Years of Excellence</div>
               </div>
             </div>
