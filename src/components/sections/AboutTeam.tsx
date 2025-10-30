@@ -28,30 +28,7 @@ const teamMembers = [
     specialties: ['Operations Management', 'Strategic Planning', 'Team Leadership'],
     experience: '15+ years'
   },
-  {
-    name: 'Grace Akinyi',
-    position: 'Cultural Experience Coordinator',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'Grace specializes in creating authentic cultural experiences that connect visitors with local communities across Kenya.',
-    specialties: ['Cultural Tours', 'Community Relations', 'Traditional Crafts'],
-    experience: '6+ years'
-  },
-  {
-    name: 'David Kipchoge',
-    position: 'Mountain Guide & Safety Expert',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'An experienced mountaineer and safety expert, David leads our Mount Kenya expeditions and ensures the highest safety standards.',
-    specialties: ['Mountain Climbing', 'Safety Training', 'Equipment Management'],
-    experience: '10+ years'
-  },
-  {
-    name: 'Mary Njeri',
-    position: 'Customer Experience Manager',
-    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'Mary is dedicated to ensuring every customer has an exceptional experience from booking to the end of their expedition.',
-    specialties: ['Customer Service', 'Booking Management', 'Travel Planning'],
-    experience: '7+ years'
-  }
+
 ]
 
 export default function AboutTeam() {
