@@ -90,7 +90,7 @@ export default function AboutMission() {
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                src="/images/Bob.png"
                 alt="Bob Awuonda"
                 className="w-16 h-16 rounded-full object-cover"
               />
