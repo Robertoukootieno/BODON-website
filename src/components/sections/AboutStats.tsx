@@ -11,10 +11,10 @@ const stats = [
     description: 'Satisfied customers from around the world'
   },
   {
-    number: 16,
-    suffix: '+',
+    number: 5,
+    suffix: '',
     label: 'Years Experience',
-    description: 'Serving adventurers since 2009'
+    description: 'Serving adventurers since 2020'
   },
   {
     number: 50,

@@ -6,9 +6,9 @@ import { Award, Users, Globe, Heart } from 'lucide-react'
 const highlights = [
   {
     icon: Award,
-    number: '16+',
+    number: '5',
     label: 'Years Experience',
-    description: 'Serving adventurers since 2009'
+    description: 'Serving adventurers since 2020'
   },
   {
     icon: Users,

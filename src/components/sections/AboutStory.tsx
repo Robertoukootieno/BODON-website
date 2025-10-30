@@ -5,31 +5,31 @@ import { Calendar, MapPin, Users, Award } from 'lucide-react'
 
 const milestones = [
   {
-    year: '2009',
+    year: '2020',
     title: 'The Beginning',
     description: 'Founded by Robert Ukoo Tieno with a vision to showcase Kenya\'s natural beauty to the world.',
     icon: Calendar
   },
   {
-    year: '2012',
+    year: '2021',
     title: 'First Major Expansion',
     description: 'Expanded operations to include Mount Kenya climbing expeditions and cultural tours.',
     icon: MapPin
   },
   {
-    year: '2015',
+    year: '2022',
     title: 'Team Growth',
     description: 'Grew to a team of 25+ experienced guides and support staff across Kenya.',
     icon: Users
   },
   {
-    year: '2018',
+    year: '2023',
     title: 'Industry Recognition',
     description: 'Received Kenya Tourism Board certification and multiple industry awards.',
     icon: Award
   },
   {
-    year: '2023',
+    year: '2024',
     title: 'Digital Innovation',
     description: 'Launched online booking platform and expanded car rental services.',
     icon: Calendar
@@ -37,7 +37,7 @@ const milestones = [
   {
     year: '2025',
     title: 'New Horizons',
-    description: 'Celebrating 16 years of excellence with expanded services and international partnerships.',
+    description: 'Celebrating 5 years of excellence with expanded services and international partnerships.',
     icon: Award
   }
 ]
@@ -105,7 +105,7 @@ export default function AboutStory() {
             {/* Floating Stats */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 border border-neutral-100">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 mb-1">16+</div>
+                <div className="text-3xl font-bold text-primary-600 mb-1">5</div>
                 <div className="text-sm text-neutral-600">Years of Excellence</div>
               </div>
             </div>
