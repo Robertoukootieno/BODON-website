@@ -7,7 +7,7 @@ const milestones = [
   {
     year: '2020',
     title: 'The Beginning',
-    description: 'Founded by Robert Ukoo Tieno with a vision to showcase Kenya\'s natural beauty to the world.',
+    description: 'Founded by Bob Awuonda with a vision to showcase Kenya\'s natural beauty to the world.',
     icon: Calendar
   },
   {
@@ -77,7 +77,7 @@ export default function AboutStory() {
                 Bodon Expedition Kenya was born from a simple yet powerful vision: to share the breathtaking beauty and rich cultural heritage of Kenya with adventurers from around the world. What started as a small local guiding service has grown into one of Kenya's most trusted expedition companies.
               </p>
               <p>
-                Our founder, Robert Ukoo Tieno, grew up in the heart of Kenya, surrounded by the majestic landscapes that would later become the backdrop for countless adventures. His deep connection to the land and its people inspired him to create experiences that go beyond typical tourism.
+                Our founder, Bob Awuonda, grew up in the heart of Kenya, surrounded by the majestic landscapes that would later become the backdrop for countless adventures. His deep connection to the land and its people inspired him to create experiences that go beyond typical tourism.
               </p>
               <p>
                 Today, we continue to honor that original vision while embracing innovation and sustainability. Every expedition we organize is crafted with the same passion and attention to detail that has defined us from the beginning.

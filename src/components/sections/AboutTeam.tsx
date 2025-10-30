@@ -5,10 +5,10 @@ import { MapPin, Award, Users, Star } from 'lucide-react'
 
 const teamMembers = [
   {
-    name: 'Robert Ukoo Tieno',
+    name: 'Bob Awuonda',
     position: 'Founder & CEO',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'With a passion for Kenya\'s natural beauty and tourism, Robert founded Bodon Expedition in 2020 with a vision to provide exceptional safari and adventure experiences to travelers worldwide.',
+    bio: 'With a passion for Kenya\'s natural beauty and tourism, Bob founded Bodon Expedition in 2020 with a vision to provide exceptional safari and adventure experiences to travelers worldwide.',
     specialties: ['Safari Planning', 'Cultural Tours', 'Business Development'],
     experience: '5 years'
   },

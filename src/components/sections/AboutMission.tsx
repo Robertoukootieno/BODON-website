@@ -91,11 +91,11 @@ export default function AboutMission() {
             <div className="flex items-center justify-center space-x-4">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-                alt="Robert Ukoo Tieno"
+                alt="Bob Awuonda"
                 className="w-16 h-16 rounded-full object-cover"
               />
               <div className="text-left">
-                <div className="font-semibold text-neutral-900">Robert Ukoo Tieno</div>
+                <div className="font-semibold text-neutral-900">Bob Awuonda</div>
                 <div className="text-neutral-600">Founder & CEO</div>
               </div>
             </div>
