@@ -7,25 +7,25 @@ import Link from 'next/link'
 
 const featuredVehicles = [
   {
-    name: 'Economy Cars',
-    description: 'Perfect for city exploration',
-    image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    price: 'From $35/day',
-    features: ['Fuel Efficient', 'Air Conditioning', 'Manual/Auto']
+    name: 'Compact Cars',
+    description: 'Perfect for city driving and tight spaces',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.09.jpeg',
+    price: 'From KES 4,500/day',
+    features: ['Fuel Efficient', 'Air Conditioning', 'Manual Transmission']
   },
   {
-    name: 'SUVs',
-    description: 'Ideal for family adventures',
-    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    price: 'From $65/day',
-    features: ['7 Passengers', 'GPS Navigation', 'All Terrain']
+    name: 'MPV',
+    description: 'Ideal for families and group travel',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (1).jpeg',
+    price: 'From KES 8,000/day',
+    features: ['7 Passengers', 'GPS Navigation', 'Spacious Interior']
   },
   {
-    name: '4WD Safari',
-    description: 'Built for safari adventures',
-    image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    price: 'From $120/day',
-    features: ['4WD Capability', 'Safari Roof', 'Professional Driver']
+    name: 'Tour Van',
+    description: 'Perfect for group tours and large parties',
+    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (2).jpeg',
+    price: 'From KES 22,000/day',
+    features: ['16 Passengers', 'Professional Driver', 'Premium Comfort']
   }
 ]
 
