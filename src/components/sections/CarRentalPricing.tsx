@@ -23,6 +23,22 @@ const pricingPlans = [
     ]
   },
   {
+    name: 'Sedan',
+    description: 'Comfortable sedan with modern features',
+    price: 'KES 6,500',
+    period: 'per day',
+    popular: false,
+    vehicles: ['Toyota Corolla Axio (E160)', 'Honda Civic', 'Mazda 3'],
+    features: [
+      'Automatic transmission',
+      'Air conditioning',
+      'Power steering',
+      'Basic insurance included',
+      'Fuel efficient',
+      '24/7 support'
+    ]
+  },
+  {
     name: 'MPV',
     description: 'Ideal for families and group travel',
     price: 'KES 8,000',

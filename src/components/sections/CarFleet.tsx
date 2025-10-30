@@ -53,18 +53,18 @@ const vehicles = [
   },
   {
     id: 4,
-    name: 'Toyota Hiace Van',
-    category: 'Van',
+    name: 'Toyota Corolla Axio (E160)',
+    category: 'Sedan',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.10.jpeg',
-    price: 12000,
+    price: 6500,
     period: 'per day',
     features: {
-      passengers: 14,
-      luggage: 8,
-      transmission: 'Manual',
-      fuel: 'Diesel'
+      passengers: 5,
+      luggage: 3,
+      transmission: 'Automatic',
+      fuel: 'Petrol'
     },
-    description: 'Spacious van perfect for group travel and large families.'
+    description: 'Reliable sedan with excellent fuel efficiency and modern comfort features.'
   },
   {
     id: 5,
