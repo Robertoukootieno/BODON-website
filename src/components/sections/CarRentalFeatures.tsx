@@ -135,8 +135,8 @@ export default function CarRentalFeatures() {
             
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Kenya landscape with car"
+                src="/images/WhatsApp Image 2025-09-07 at 20.21.38.jpeg"
+                alt="Kenya safari adventure with vehicle"
                 className="rounded-2xl shadow-lg w-full h-64 object-cover"
               />
             </div>
