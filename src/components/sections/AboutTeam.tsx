@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: 'Chauffeur Sylvester',
     position: 'Professional Chauffeur & Driver',
-    image: '/images/WhatsApp Image 2025-09-07 at 20.22.05.jpeg',
+    image: '/images/WhatsApp Image 2025-09-07 at 20.23.30.jpeg',
     bio: 'Sylvester is our experienced and professional chauffeur, ensuring safe and comfortable transportation for all our guests throughout their expeditions.',
     specialties: ['Safe Driving', 'Route Planning', 'Vehicle Maintenance'],
     experience: '10+ years'
@@ -23,7 +23,7 @@ const teamMembers = [
   {
     name: 'Director Don',
     position: 'Operations Director',
-    image: '/images/WhatsApp Image 2025-09-07 at 20.21.38.jpeg',
+    image: '/images/WhatsApp Image 2025-09-07 at 20.22.05.jpeg',
     bio: 'Director Don oversees all operational aspects of Bodon Expedition, ensuring excellence in service delivery and guest satisfaction.',
     specialties: ['Operations Management', 'Strategic Planning', 'Team Leadership'],
     experience: '15+ years'
