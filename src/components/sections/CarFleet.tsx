@@ -68,8 +68,8 @@ const vehicles = [
   },
   {
     id: 5,
-    name: 'Nissan X-Trail',
-    category: 'SUV',
+    name: 'Toyota Voxy',
+    category: 'MPV',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (1).jpeg',
     price: 8000,
     period: 'per day',
@@ -79,12 +79,12 @@ const vehicles = [
       transmission: 'Automatic',
       fuel: 'Petrol'
     },
-    description: 'Comfortable SUV with excellent fuel economy and modern features.'
+    description: 'Spacious MPV perfect for family trips and group travel with modern comfort.'
   },
   {
     id: 6,
-    name: 'Mercedes Sprinter',
-    category: 'Luxury Van',
+    name: 'Tour Van',
+    category: 'Tour Van',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (2).jpeg',
     price: 22000,
     period: 'per day',
@@ -94,7 +94,7 @@ const vehicles = [
       transmission: 'Automatic',
       fuel: 'Diesel'
     },
-    description: 'Premium luxury van with air conditioning and comfortable seating.'
+    description: 'Premium tour van with air conditioning and comfortable seating for group tours.'
   }
 ]
 

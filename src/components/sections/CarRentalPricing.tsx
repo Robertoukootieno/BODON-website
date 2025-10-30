@@ -23,38 +23,38 @@ const pricingPlans = [
     ]
   },
   {
-    name: 'SUV',
-    description: 'Ideal for families and light adventures',
-    price: 'KES 9,500',
+    name: 'MPV',
+    description: 'Ideal for families and group travel',
+    price: 'KES 8,000',
     period: 'per day',
     popular: true,
-    vehicles: ['Toyota RAV4', 'Nissan X-Trail', 'Honda CR-V'],
+    vehicles: ['Toyota Voxy', 'Honda Odyssey', 'Nissan Serena'],
     features: [
       'Automatic transmission',
       'Air conditioning',
       'GPS navigation',
       'Comprehensive insurance',
-      'Higher ground clearance',
+      'Spacious interior',
       '24/7 roadside assistance',
       'Bluetooth connectivity'
     ]
   },
   {
-    name: '4WD Safari',
-    description: 'Built for safari and rough terrain',
-    price: 'KES 17,500',
+    name: 'Tour Van',
+    description: 'Perfect for group tours and large parties',
+    price: 'KES 22,000',
     period: 'per day',
     popular: false,
-    vehicles: ['Toyota Land Cruiser', 'Mitsubishi Pajero', 'Nissan Patrol'],
+    vehicles: ['Tour Van', 'Mercedes Sprinter', 'Isuzu Coach'],
     features: [
-      '4-wheel drive capability',
+      'Spacious seating for groups',
       'Automatic transmission',
       'Air conditioning',
       'GPS navigation',
       'Premium insurance',
-      'Safari roof option',
+      'Professional driver available',
       'Emergency communication',
-      'Professional driver available'
+      'Comfortable for long journeys'
     ]
   }
 ]
