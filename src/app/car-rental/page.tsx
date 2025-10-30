@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Layout from '@/components/layout/Layout'
 import CarRentalHero from '@/components/sections/CarRentalHero'
 import CarFleet from '@/components/sections/CarFleet'
 import CarRentalFeatures from '@/components/sections/CarRentalFeatures'
@@ -13,12 +14,14 @@ export const metadata: Metadata = {
 
 export default function CarRentalPage() {
   return (
-    <main className="min-h-screen">
-      <CarRentalHero />
-      <CarFleet />
-      <CarRentalFeatures />
-      <CarRentalPricing />
-      <CallToAction />
-    </main>
+    <Layout>
+      <main className="min-h-screen">
+        <CarRentalHero />
+        <CarFleet />
+        <CarRentalFeatures />
+        <CarRentalPricing />
+        <CallToAction />
+      </main>
+    </Layout>
   )
 }
