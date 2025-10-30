@@ -13,20 +13,20 @@ const teamMembers = [
     experience: '5 years'
   },
   {
-    name: 'Sarah Wanjiku',
-    position: 'Head of Operations',
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'Sarah ensures smooth operations across all our expeditions, bringing exceptional organizational skills and attention to detail.',
-    specialties: ['Operations Management', 'Quality Control', 'Team Coordination'],
-    experience: '8+ years'
+    name: 'Chauffeur Sylvester',
+    position: 'Professional Chauffeur & Driver',
+    image: '/images/WhatsApp Image 2025-09-07 at 20.22.05.jpeg',
+    bio: 'Sylvester is our experienced and professional chauffeur, ensuring safe and comfortable transportation for all our guests throughout their expeditions.',
+    specialties: ['Safe Driving', 'Route Planning', 'Vehicle Maintenance'],
+    experience: '10+ years'
   },
   {
-    name: 'James Mwangi',
-    position: 'Senior Safari Guide',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-    bio: 'A passionate wildlife expert and storyteller, James has guided thousands of visitors through Kenya\'s most spectacular national parks.',
-    specialties: ['Wildlife Photography', 'Maasai Mara', 'Bird Watching'],
-    experience: '12+ years'
+    name: 'Director Don',
+    position: 'Operations Director',
+    image: '/images/WhatsApp Image 2025-09-07 at 20.21.38.jpeg',
+    bio: 'Director Don oversees all operational aspects of Bodon Expedition, ensuring excellence in service delivery and guest satisfaction.',
+    specialties: ['Operations Management', 'Strategic Planning', 'Team Leadership'],
+    experience: '15+ years'
   },
   {
     name: 'Grace Akinyi',
