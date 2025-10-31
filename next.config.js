@@ -27,6 +27,12 @@ const nextConfig = {
     EMAIL_SERVER_USER: process.env.EMAIL_SERVER_USER,
     EMAIL_SERVER_PASSWORD: process.env.EMAIL_SERVER_PASSWORD,
   },
+  // Skip data collection for API routes during build
+  experimental: {
+    isrMemoryCacheSize: 0,
+  },
+  // Disable static optimization for routes that require runtime data
+  staticPageGenerationTimeout: 0,
 }
 
 module.exports = nextConfig

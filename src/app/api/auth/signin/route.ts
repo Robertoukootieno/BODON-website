@@ -3,6 +3,9 @@ import { prisma } from '@/lib/db'
 import { signInSchema } from '@/lib/validations/auth'
 import { verifyPassword, generateToken, setAuthCookie } from '@/lib/auth/utils'
 
+// Mark this route as dynamic to prevent static generation
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()

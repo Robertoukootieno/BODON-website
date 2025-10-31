@@ -2,11 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getAuthTokenFromRequest, verifyToken } from '@/lib/auth/utils'
 
+// Mark this route as dynamic to prevent static generation
+export const dynamic = 'force-dynamic'
+
 export async function GET(request: NextRequest) {
   try {
     // Get token from request
     const token = getAuthTokenFromRequest(request)
-    
+
     if (!token) {
       return NextResponse.json(
         { error: 'No authentication token provided' },
@@ -53,7 +56,7 @@ export async function GET(request: NextRequest) {
 
   } catch (error) {
     console.error('Get user error:', error)
-    
+
     return NextResponse.json(
       { error: 'An error occurred while fetching user data' },
       { status: 500 }
