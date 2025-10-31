@@ -16,7 +16,7 @@ const featuredVehicles = [
   {
     name: 'MPV',
     description: 'Ideal for families and group travel',
-    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (1).jpeg',
+    image: '/images/toyatavoxy.png',
     price: 'From KES 8,000/day',
     features: ['7 Passengers', 'GPS Navigation', 'Spacious Interior']
   },
@@ -169,7 +169,7 @@ export default function CarRentalPreview() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/car-rental">
-                <Button size="lg" className="bg-white text-primary-600 hover:bg-neutral-100 w-full sm:w-auto">
+                <Button size="lg" variant="ghost" className="!bg-white !text-primary-600 hover:!bg-neutral-100 w-full sm:w-auto">
                   View All Vehicles
                 </Button>
               </Link>

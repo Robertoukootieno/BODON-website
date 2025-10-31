@@ -70,7 +70,7 @@ const vehicles = [
     id: 5,
     name: 'Toyota Voxy',
     category: 'MPV',
-    image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (1).jpeg',
+    image: '/images/toyatavoxy.png',
     price: 8000,
     period: 'per day',
     features: {
