@@ -30,9 +30,16 @@ const nextConfig = {
   // Skip data collection for API routes during build
   experimental: {
     isrMemoryCacheSize: 0,
+    // Prevent Next.js from trying to collect page data for API routes
+    instrumentationHook: true,
   },
   // Disable static optimization for routes that require runtime data
   staticPageGenerationTimeout: 0,
+  // Prevent data collection for API routes
+  onDemandEntries: {
+    maxInactiveAge: 60 * 1000,
+    pagesBufferLength: 5,
+  },
 }
 
 module.exports = nextConfig

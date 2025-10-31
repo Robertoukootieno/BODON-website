@@ -36,7 +36,12 @@ export default function AuthHeader() {
 
   // Fetch current user on component mount
   useEffect(() => {
-    fetchCurrentUser()
+    // Only fetch if we're in the browser (not during build)
+    if (typeof window !== 'undefined') {
+      fetchCurrentUser()
+    } else {
+      setLoading(false)
+    }
   }, [])
 
   const fetchCurrentUser = async () => {
