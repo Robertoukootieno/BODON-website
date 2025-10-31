@@ -68,7 +68,7 @@ export default function CallToAction() {
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-neutral-200">
               <div className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-secondary-400" />
-                <span>+254-XXX-XXXXXX</span>
+                <span>+254-758270982</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-secondary-400" />

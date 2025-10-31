@@ -89,8 +89,8 @@ const expertiseAreas = [
 
 const whyChooseUs = [
   {
-    title: '15+ Years Experience',
-    description: 'Over a decade of guiding travelers through Kenya\'s wonders'
+    title: '5 Years of Excellence',
+    description: 'Dedicated to guiding travelers through Kenya\'s wonders with passion and expertise'
   },
   {
     title: 'Local Expertise',

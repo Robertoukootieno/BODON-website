@@ -121,8 +121,8 @@ export default function WhyChooseUs() {
               <div className="text-sm md:text-base opacity-90">Destinations</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">15+</div>
-              <div className="text-sm md:text-base opacity-90">Years Experience</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">5</div>
+              <div className="text-sm md:text-base opacity-90">Years of Excellence</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold mb-2">4.9</div>
