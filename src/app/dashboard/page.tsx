@@ -16,6 +16,9 @@ import Layout from '@/components/layout/Layout'
 import Button from '@/components/ui/Button'
 import { getCurrentUser } from '@/lib/auth/utils'
 
+// Mark this page as dynamic to prevent static generation
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Dashboard - Bodon Expedition Kenya',
   description: 'Manage your bookings, view trip history, and access exclusive member benefits.',

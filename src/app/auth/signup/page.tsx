@@ -6,6 +6,9 @@ import Layout from '@/components/layout/Layout'
 import SignUpForm from '@/components/forms/SignUpForm'
 import { getCurrentUser } from '@/lib/auth/utils'
 
+// Mark this page as dynamic to prevent static generation
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Create Account - Bodon Expedition Kenya',
   description: 'Join thousands of travelers who trust Bodon Expedition for unforgettable Kenya adventures. Create your account to access exclusive benefits and personalized service.',

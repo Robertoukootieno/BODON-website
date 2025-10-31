@@ -7,6 +7,9 @@ import Layout from '@/components/layout/Layout'
 import SignInForm from '@/components/forms/SignInForm'
 import { getCurrentUser } from '@/lib/auth/utils'
 
+// Mark this page as dynamic to prevent static generation
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Sign In - Bodon Expedition Kenya',
   description: 'Sign in to your Bodon Expedition account to manage bookings, view trip history, and access exclusive member benefits.',
