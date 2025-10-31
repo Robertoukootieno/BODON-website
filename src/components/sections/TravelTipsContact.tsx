@@ -169,25 +169,21 @@ export default function TravelTipsContact() {
                   </div>
 
                   {method.action.startsWith('http') || method.action.startsWith('tel:') || method.action.startsWith('mailto:') ? (
-                    <Button
-                      as="a"
+                    <a
                       href={method.action}
                       target={method.action.startsWith('http') ? '_blank' : undefined}
                       rel={method.action.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className="w-full"
-                      size="sm"
+                      className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-3 py-2 text-sm w-full"
                     >
                       Contact Now
-                    </Button>
+                    </a>
                   ) : (
-                    <Button
-                      as={Link}
+                    <Link
                       href={method.action}
-                      className="w-full"
-                      size="sm"
+                      className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-3 py-2 text-sm w-full"
                     >
                       Get Directions
-                    </Button>
+                    </Link>
                   )}
                 </div>
               </div>
@@ -274,24 +270,21 @@ export default function TravelTipsContact() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <Button 
-                as="a" 
+              <a
                 href="tel:+254758270982"
-                size="lg"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-6 py-3 text-base"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call +254-758270982
-              </Button>
-              
-              <Button 
-                as={Link} 
+              </a>
+
+              <Link
                 href="/contact"
-                variant="outline"
-                size="lg"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500 px-6 py-3 text-base"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Send Inquiry
-              </Button>
+              </Link>
             </div>
 
             <div className="mt-4 flex items-center justify-center space-x-2 text-neutral-600 text-sm">

@@ -244,26 +244,21 @@ export default function BookingSupport() {
               </p>
               
               <div className="space-y-3">
-                <Button 
-                  as="a" 
+                <a
                   href="tel:+254758270982"
-                  className="w-full"
-                  size="lg"
+                  className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-6 py-3 text-base w-full"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now: +254-758270982
-                </Button>
-                
-                <Button 
-                  as="a" 
+                </a>
+
+                <Link
                   href="/contact"
-                  variant="outline"
-                  className="w-full"
-                  size="lg"
+                  className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500 px-6 py-3 text-base w-full"
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   Send Inquiry
-                </Button>
+                </Link>
               </div>
 
               <div className="mt-4 p-3 bg-primary-50 rounded-lg">

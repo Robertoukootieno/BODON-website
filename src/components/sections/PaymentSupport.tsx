@@ -1,13 +1,14 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { 
-  Phone, 
-  MessageCircle, 
-  Mail, 
-  Clock, 
-  Shield, 
+import {
+  Phone,
+  MessageCircle,
+  Mail,
+  Clock,
+  Shield,
   CreditCard,
   Smartphone,
   HelpCircle,
@@ -165,16 +166,23 @@ export default function PaymentSupport() {
                   <div className="text-sm text-neutral-500">Response: <span className="text-primary-600 font-medium">{option.response}</span></div>
                 </div>
 
-                <Button
-                  as="a"
-                  href={option.action}
-                  target={option.action.startsWith('http') ? '_blank' : undefined}
-                  rel={option.action.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="w-full"
-                  size="sm"
-                >
-                  Contact Now
-                </Button>
+                {option.action.startsWith('http') ? (
+                  <a
+                    href={option.action}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-3 py-2 text-sm w-full"
+                  >
+                    Contact Now
+                  </a>
+                ) : (
+                  <a
+                    href={option.action}
+                    className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-3 py-2 text-sm w-full"
+                  >
+                    Contact Now
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
@@ -278,25 +286,20 @@ export default function PaymentSupport() {
               We're committed to providing secure, reliable payment processing. If you experience any issues, our support team will resolve them quickly and professionally.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <Button 
-                as="a" 
+              <a
                 href="tel:+254758270982"
-                variant="secondary"
-                size="lg"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-secondary-500 hover:bg-secondary-600 text-white focus:ring-secondary-400 px-6 py-3 text-base"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Support Now
-              </Button>
-              <Button 
-                as="a" 
+              </a>
+              <Link
                 href="/contact"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10"
-                size="lg"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-white text-white hover:bg-white/10 focus:ring-primary-500 px-6 py-3 text-base"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email Support
-              </Button>
+              </Link>
             </div>
             <div className="mt-4 flex items-center justify-center space-x-2 text-primary-100 text-sm">
               <Clock className="w-4 h-4" />

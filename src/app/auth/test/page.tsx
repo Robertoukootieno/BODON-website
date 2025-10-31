@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import toast from 'react-hot-toast'
 import Button from '@/components/ui/Button'
 
@@ -242,30 +243,24 @@ export default function AuthTestPage() {
           {/* Navigation */}
           <div className="mt-8 pt-8 border-t border-neutral-200">
             <div className="flex space-x-4">
-              <Button
-                as="a"
+              <Link
                 href="/auth/signin"
-                variant="outline"
-                size="sm"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500 px-3 py-2 text-sm"
               >
                 Go to Sign In Page
-              </Button>
-              <Button
-                as="a"
+              </Link>
+              <Link
                 href="/auth/signup"
-                variant="outline"
-                size="sm"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500 px-3 py-2 text-sm"
               >
                 Go to Sign Up Page
-              </Button>
-              <Button
-                as="a"
+              </Link>
+              <Link
                 href="/dashboard"
-                variant="outline"
-                size="sm"
+                className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500 px-3 py-2 text-sm"
               >
                 Go to Dashboard
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

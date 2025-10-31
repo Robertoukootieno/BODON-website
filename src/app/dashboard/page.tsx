@@ -1,11 +1,12 @@
 import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
-import { 
-  User, 
-  Calendar, 
-  CreditCard, 
-  MapPin, 
-  Star, 
+import Link from 'next/link'
+import {
+  User,
+  Calendar,
+  CreditCard,
+  MapPin,
+  Star,
   Settings,
   LogOut,
   Phone,
@@ -126,9 +127,9 @@ export default async function DashboardPage() {
                   <p className="text-neutral-600 mb-6">
                     Start planning your Kenya adventure by exploring our tours and experiences.
                   </p>
-                  <Button as="a" href="/tours">
+                  <Link href="/tours" className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500 px-4 py-2.5 text-sm">
                     Browse Tours
-                  </Button>
+                  </Link>
                 </div>
               </div>
             </div>
