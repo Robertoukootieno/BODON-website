@@ -5,13 +5,22 @@ import { useRouter } from 'next/navigation'
 import toast from 'react-hot-toast'
 import Button from '@/components/ui/Button'
 
+interface User {
+  id: string
+  email: string
+  firstName: string
+  lastName: string
+  role: string
+  createdAt: string
+}
+
 export default function AuthTestPage() {
   const [email, setEmail] = useState('test@example.com')
   const [password, setPassword] = useState('TestPassword123!')
   const [firstName, setFirstName] = useState('Test')
   const [lastName, setLastName] = useState('User')
   const [loading, setLoading] = useState(false)
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState<User | null>(null)
   const router = useRouter()
 
   const testSignUp = async () => {
