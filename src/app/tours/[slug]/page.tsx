@@ -17,10 +17,10 @@ const tours = [
     slug: 'nairobi-city-tour',
     shortDescription: 'Explore Kenya\'s vibrant capital city with guided tours of iconic landmarks, museums, and local markets.',
     fullDescription: 'Discover the heart of Kenya with our comprehensive Nairobi City Tour. Explore the vibrant capital city\'s rich history, diverse culture, and modern attractions. Visit world-class museums, iconic landmarks, bustling local markets, and experience the authentic Nairobi lifestyle. Perfect for first-time visitors or those wanting to understand Kenya\'s urban landscape.',
-    image: 'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
     price: 35000,

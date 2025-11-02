@@ -15,7 +15,7 @@ const featuredTours = [
     title: 'Nairobi City Tour',
     slug: 'nairobi-city-tour',
     shortDescription: 'Explore Kenya\'s vibrant capital city with guided tours of iconic landmarks, museums, and local markets.',
-    image: 'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     price: 35000,
     duration: 1,
     maxGroupSize: 20,
@@ -36,19 +36,7 @@ const featuredTours = [
     reviewCount: 156,
     category: 'Safari'
   },
-  {
-    id: '2',
-    title: 'Mount Kenya Climbing Expedition',
-    slug: 'mount-kenya-climbing',
-    shortDescription: 'Conquer Africa\'s second-highest peak with breathtaking views and challenging trails.',
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 120000,
-    duration: 6,
-    maxGroupSize: 12,
-    rating: 4.8,
-    reviewCount: 89,
-    category: 'Adventure'
-  },
+
   {
     id: '3',
     title: 'Diani Beach & Culture Tour',

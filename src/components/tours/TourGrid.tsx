@@ -15,7 +15,7 @@ const tours = [
     title: 'Nairobi City Tour',
     slug: 'nairobi-city-tour',
     shortDescription: 'Explore Kenya\'s vibrant capital city with guided tours of iconic landmarks, museums, and local markets.',
-    image: 'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     price: 35000,
     duration: 1,
     maxGroupSize: 20,
