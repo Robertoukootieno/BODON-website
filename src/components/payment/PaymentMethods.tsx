@@ -6,6 +6,7 @@ import { CreditCard, Smartphone, DollarSign, Shield } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import { clsx } from 'clsx'
+import { formatKESPrice } from '@/lib/utils'
 
 export type PaymentMethod = 'stripe' | 'mpesa' | 'paypal'
 
@@ -54,8 +55,8 @@ export default function PaymentMethods({
   loading = false,
 }: PaymentMethodsProps) {
   const formatAmount = (amount: number, currency: string) => {
-    if (currency === 'KES') {
-      return `KES ${amount.toLocaleString()}`
+    if (currency === 'KES' || currency === 'USD') {
+      return formatKESPrice(amount)
     }
     return new Intl.NumberFormat('en-US', {
       style: 'currency',

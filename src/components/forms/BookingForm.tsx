@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { Calendar, Users, Car, MapPin, Clock } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
+import { formatKESPrice } from '@/lib/utils'
 
 type ServiceType = 'tour' | 'car-rental'
 
@@ -138,7 +139,7 @@ export default function BookingForm() {
             <option value="">Select an option...</option>
             {currentOptions.map((option) => (
               <option key={option.id} value={option.id}>
-                {option.name} - KES {option.price.toLocaleString()}/{serviceType === 'tour' ? 'person' : 'day'}
+                {option.name} - {formatKESPrice(option.price)}/{serviceType === 'tour' ? 'person' : 'day'}
               </option>
             ))}
           </select>

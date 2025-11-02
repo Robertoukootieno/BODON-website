@@ -120,7 +120,7 @@ const faqCategories = [
       },
       {
         question: 'What currency is used in Kenya?',
-        answer: 'The Kenyan Shilling (KES) is the official currency. US Dollars are widely accepted in tourist areas. Credit cards are accepted in major hotels and restaurants. ATMs are available in cities and towns. We recommend carrying some cash for small purchases and tips.'
+        answer: 'The Kenyan Shilling (KES) is the official currency. All our prices are quoted in US Dollars (USD). US Dollars are widely accepted in tourist areas. Credit cards are accepted in major hotels and restaurants. ATMs are available in cities and towns. We recommend carrying some cash in KES for small purchases and tips.'
       },
       {
         question: 'What is the time zone in Kenya?',

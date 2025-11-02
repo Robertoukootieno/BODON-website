@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { Clock, Users, Star, ArrowRight } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
+import { formatKESPrice } from '@/lib/utils'
 
 // Mock data - in real app, this would come from API
 const featuredTours = [
@@ -123,7 +124,7 @@ export default function FeaturedTours() {
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-2xl font-bold text-primary-600">
-                        KES {tour.price.toLocaleString()}
+                        {formatKESPrice(tour.price)}
                       </span>
                       <span className="text-neutral-500 text-sm ml-1">per person</span>
                     </div>

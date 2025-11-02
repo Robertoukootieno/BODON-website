@@ -23,7 +23,7 @@ const paymentFAQs = [
   },
   {
     question: 'What currencies do you accept?',
-    answer: 'We accept payments in KES (Kenyan Shillings), USD, EUR, and GBP. All prices are displayed in KES by default, but international customers can pay in their preferred currency. Exchange rates are updated daily for accurate conversions.'
+    answer: 'We accept payments in USD (US Dollars), KES (Kenyan Shillings), EUR, and GBP. All prices are displayed in USD by default. Kenyan customers can pay in KES or USD. Exchange rates are updated daily for accurate conversions.'
   },
   {
     question: 'Are there any additional fees for payments?',

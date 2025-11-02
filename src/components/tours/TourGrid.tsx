@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { Clock, Users, Star, ArrowRight, Grid, List } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
+import { formatKESPrice } from '@/lib/utils'
 
 // Mock data - in real app, this would come from API
 const tours = [
@@ -106,7 +107,7 @@ const tours = [
     slug: 'samburu-cultural-experience',
     shortDescription: 'Immerse yourself in the rich traditions of the Samburu people and their unique way of life.',
     image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    price: 110000,
+    price: 733,
     duration: 4,
     maxGroupSize: 12,
     rating: 4.9,
@@ -204,7 +205,7 @@ export default function TourGrid() {
           <div className="flex items-center justify-between">
             <div>
               <span className="text-2xl font-bold text-primary-600">
-                KES {tour.price.toLocaleString()}
+                {formatKESPrice(tour.price)}
               </span>
               <span className="text-neutral-500 text-sm ml-1">per person</span>
             </div>
