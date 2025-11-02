@@ -187,7 +187,7 @@ export default function CarPricing({ car }: CarPricingProps) {
               <h5 className="font-semibold text-blue-900 mb-3">Important Pricing Information:</h5>
               <ul className="space-y-2 text-sm text-blue-800">
                 <li>• All prices include comprehensive insurance and unlimited mileage within Kenya</li>
-                <li>• Security deposit required: KES 50,000 (refundable upon return)</li>
+                <li>• Security deposit required: $350 (refundable upon return)</li>
                 <li>• Fuel costs are not included - vehicle provided with full tank</li>
                 <li>• Prices may vary during peak seasons and holidays</li>
                 <li>• Early booking discounts available for rentals over 7 days</li>

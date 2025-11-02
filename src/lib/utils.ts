@@ -4,26 +4,36 @@ export function cn(...inputs: ClassValue[]) {
   return clsx(inputs)
 }
 
-export function formatCurrency(amount: number, currency: string = 'KES'): string {
-  if (currency === 'KES') {
-    return `KES ${amount.toLocaleString('en-KE')}`
+export function formatCurrency(amount: number, currency: string = 'USD'): string {
+  if (currency === 'USD') {
+    return `$${amount.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`
   }
-  return new Intl.NumberFormat('en-KE', {
+  return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency,
   }).format(amount)
 }
 
-// Currency conversion rates (approximate, should be fetched from API in production)
-export const CURRENCY_RATES = {
-  USD_TO_KES: 150,
-  EUR_TO_KES: 165,
-  GBP_TO_KES: 190,
+// Format price in USD (alias for formatCurrency)
+export function formatUSDPrice(amount: number): string {
+  return formatCurrency(amount, 'USD')
 }
 
-// Convert USD prices to KES
-export function convertUSDToKES(usdAmount: number): number {
-  return Math.round(usdAmount * CURRENCY_RATES.USD_TO_KES)
+// Legacy function for backward compatibility (kept for reference)
+export function formatKESPrice(amount: number): string {
+  return formatCurrency(amount, 'USD')
+}
+
+// Currency conversion rates (approximate, should be fetched from API in production)
+export const CURRENCY_RATES = {
+  KES_TO_USD: 0.0067,
+  EUR_TO_USD: 1.1,
+  GBP_TO_USD: 1.27,
+}
+
+// Convert KES prices to USD
+export function convertKESToUSD(kesAmount: number): number {
+  return Math.round(kesAmount * CURRENCY_RATES.KES_TO_USD)
 }
 
 // Format price with KES currency

@@ -104,7 +104,7 @@ const tipCategories = [
 const quickTips = [
   {
     category: 'Money',
-    tip: 'Kenyan shillings (KES) are the local currency. US dollars are also accepted at most tourist establishments, but carry KES for small purchases and tips.'
+    tip: 'All our prices are in US dollars (USD). Kenyan shillings (KES) are the local currency. US dollars are widely accepted at tourist establishments, but carry KES for small purchases and tips.'
   },
   {
     category: 'Communication',
