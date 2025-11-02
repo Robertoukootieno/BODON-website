@@ -106,7 +106,7 @@ export default function TourFilters() {
             <div className="flex items-center space-x-4">
               <input
                 type="number"
-                placeholder="Min (KES)"
+                placeholder="Min (USD)"
                 className="input-field text-sm"
                 value={filters.priceRange[0]}
                 onChange={(e) => setFilters(prev => ({
@@ -117,12 +117,12 @@ export default function TourFilters() {
               <span className="text-neutral-500">-</span>
               <input
                 type="number"
-                placeholder="Max (KES)"
+                placeholder="Max (USD)"
                 className="input-field text-sm"
                 value={filters.priceRange[1]}
                 onChange={(e) => setFilters(prev => ({
                   ...prev,
-                  priceRange: [prev.priceRange[0], parseInt(e.target.value) || 500000]
+                  priceRange: [prev.priceRange[0], parseInt(e.target.value) || 5000]
                 }))}
               />
             </div>

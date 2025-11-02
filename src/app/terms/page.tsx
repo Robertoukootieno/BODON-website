@@ -95,7 +95,7 @@ export default function TermsOfServicePage() {
             <div>
               <h3 className="text-lg font-semibold text-neutral-800 mb-2">Currency and Pricing</h3>
               <p className="text-neutral-600 leading-relaxed">
-                All prices are quoted in Kenyan Shillings (KES) unless otherwise specified. Prices are subject to change without notice until booking is confirmed and payment is received.
+                All prices are quoted in US Dollars (USD) unless otherwise specified. Prices are subject to change without notice until booking is confirmed and payment is received.
               </p>
             </div>
           </div>

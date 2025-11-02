@@ -23,7 +23,7 @@ const tours = [
       'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 35000,
+    price: 233,
     duration: 1,
     maxGroupSize: 20,
     rating: 4.8,
@@ -79,7 +79,7 @@ const tours = [
       'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 175000,
+    price: 1167,
     duration: 4,
     maxGroupSize: 8,
     rating: 4.9,
@@ -164,7 +164,7 @@ const tours = [
       'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 120000,
+    price: 800,
     duration: 6,
     maxGroupSize: 12,
     rating: 4.8,
@@ -262,7 +262,7 @@ const tours = [
       'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 90000,
+    price: 600,
     duration: 5,
     maxGroupSize: 15,
     rating: 4.7,
@@ -350,7 +350,7 @@ const tours = [
       'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 140000,
+    price: 933,
     duration: 3,
     maxGroupSize: 10,
     rating: 4.8,
@@ -420,7 +420,7 @@ const tours = [
     images: [
       'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 65000,
+    price: 433,
     duration: 2,
     maxGroupSize: 20,
     rating: 4.6,
@@ -482,7 +482,7 @@ const tours = [
     images: [
       'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     ],
-    price: 110000,
+    price: 733,
     duration: 4,
     maxGroupSize: 12,
     rating: 4.9,
