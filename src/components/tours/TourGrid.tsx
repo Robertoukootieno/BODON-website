@@ -11,6 +11,21 @@ import Button from '@/components/ui/Button'
 // Mock data - in real app, this would come from API
 const tours = [
   {
+    id: '0',
+    title: 'Nairobi City Tour',
+    slug: 'nairobi-city-tour',
+    shortDescription: 'Explore Kenya\'s vibrant capital city with guided tours of iconic landmarks, museums, and local markets.',
+    image: 'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    price: 35000,
+    duration: 1,
+    maxGroupSize: 20,
+    rating: 4.8,
+    reviewCount: 142,
+    category: 'City Tour',
+    difficulty: 'Easy',
+    location: 'Nairobi'
+  },
+  {
     id: '1',
     title: 'Maasai Mara Safari Adventure',
     slug: 'maasai-mara-safari',

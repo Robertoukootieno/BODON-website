@@ -12,6 +12,61 @@ import RelatedTours from '@/components/tours/RelatedTours'
 // Mock data - in real app, this would come from API/database
 const tours = [
   {
+    id: '0',
+    title: 'Nairobi City Tour',
+    slug: 'nairobi-city-tour',
+    shortDescription: 'Explore Kenya\'s vibrant capital city with guided tours of iconic landmarks, museums, and local markets.',
+    fullDescription: 'Discover the heart of Kenya with our comprehensive Nairobi City Tour. Explore the vibrant capital city\'s rich history, diverse culture, and modern attractions. Visit world-class museums, iconic landmarks, bustling local markets, and experience the authentic Nairobi lifestyle. Perfect for first-time visitors or those wanting to understand Kenya\'s urban landscape.',
+    image: 'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1552832860-cfb67165eaf0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    ],
+    price: 35000,
+    duration: 1,
+    maxGroupSize: 20,
+    rating: 4.8,
+    reviewCount: 142,
+    category: 'City Tour',
+    difficulty: 'Easy',
+    location: 'Nairobi',
+    highlights: [
+      'Karen Blixen Museum',
+      'Nairobi National Museum',
+      'Giraffe Centre',
+      'David Sheldrick Wildlife Trust',
+      'Nairobi National Park',
+      'Local markets and shopping'
+    ],
+    included: [
+      'Hotel pickup and drop-off',
+      'Professional English-speaking guide',
+      'All entrance fees',
+      'Bottled water',
+      'Light snacks'
+    ],
+    excluded: [
+      'Meals (lunch available at extra cost)',
+      'Personal shopping',
+      'Tips and gratuities',
+      'Travel insurance'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: 'Nairobi City Exploration',
+        description: 'Start your day with a hotel pickup and begin exploring Nairobi\'s iconic landmarks. Visit the Karen Blixen Museum, explore the Nairobi National Museum, and experience the Giraffe Centre where you can interact with endangered Rothschild giraffes.',
+        activities: ['Hotel pickup', 'Karen Blixen Museum', 'Nairobi National Museum', 'Giraffe Centre', 'Local market visit'],
+        meals: ['Breakfast', 'Snacks'],
+        accommodation: 'N/A'
+      }
+    ],
+    bestTimeToVisit: 'Year-round, best during dry seasons (June-October, January-February)',
+    physicalRequirement: 'Low - mostly walking and vehicle tours',
+    ageRestriction: 'Suitable for all ages'
+  },
+  {
     id: '1',
     title: 'Maasai Mara Safari Adventure',
     slug: 'maasai-mara-safari',
