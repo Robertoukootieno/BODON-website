@@ -19,7 +19,7 @@ export function formatUSDPrice(amount: number): string {
   return formatCurrency(amount, 'USD')
 }
 
-// Legacy function for backward compatibility (kept for reference)
+// Legacy function for backward compatibility - now returns USD format
 export function formatKESPrice(amount: number): string {
   return formatCurrency(amount, 'USD')
 }
@@ -34,11 +34,6 @@ export const CURRENCY_RATES = {
 // Convert KES prices to USD
 export function convertKESToUSD(kesAmount: number): number {
   return Math.round(kesAmount * CURRENCY_RATES.KES_TO_USD)
-}
-
-// Format price with KES currency
-export function formatKESPrice(amount: number): string {
-  return `KES ${amount.toLocaleString('en-KE')}`
 }
 
 export function formatDate(date: Date | string, options?: Intl.DateTimeFormatOptions): string {
