@@ -247,7 +247,7 @@ export default function BookingForm() {
               </div>
               <div className="flex justify-between">
                 <span>Price per {serviceType === 'tour' ? 'person' : 'day'}:</span>
-                <span>${selectedOptionData.price.toLocaleString()}</span>
+                <span>KES {selectedOptionData.price.toLocaleString()}</span>
               </div>
               {serviceType === 'tour' && (
                 <div className="flex justify-between">
@@ -258,7 +258,7 @@ export default function BookingForm() {
               <div className="border-t pt-2 mt-2">
                 <div className="flex justify-between text-lg font-bold">
                   <span>Total:</span>
-                  <span className="text-primary-600">${calculateTotal().toLocaleString()}</span>
+                  <span className="text-primary-600">KES {calculateTotal().toLocaleString()}</span>
                 </div>
               </div>
             </div>

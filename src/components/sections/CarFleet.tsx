@@ -11,7 +11,7 @@ const vehicles = [
     name: 'Toyota Corolla',
     category: 'Economy',
     image: '/images/Toyota Corolla.png',
-    price: 35,
+    price: 5000,
     period: 'per day',
     features: {
       passengers: 5,
@@ -26,7 +26,7 @@ const vehicles = [
     name: 'Toyota RAV4',
     category: 'SUV',
     image: '/images/Toyota RAV4.jpg',
-    price: 65,
+    price: 9500,
     period: 'per day',
     features: {
       passengers: 5,
@@ -41,7 +41,7 @@ const vehicles = [
     name: 'Toyota Vitz',
     category: 'Compact',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.09.jpeg',
-    price: 30,
+    price: 4500,
     period: 'per day',
     features: {
       passengers: 5,
@@ -56,7 +56,7 @@ const vehicles = [
     name: 'Toyota Corolla Axio (E160)',
     category: 'Sedan',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.10.jpeg',
-    price: 45,
+    price: 6500,
     period: 'per day',
     features: {
       passengers: 5,
@@ -71,7 +71,7 @@ const vehicles = [
     name: 'Toyota Voxy',
     category: 'MPV',
     image: '/images/toyatavoxy.png',
-    price: 55,
+    price: 8000,
     period: 'per day',
     features: {
       passengers: 7,
@@ -86,7 +86,7 @@ const vehicles = [
     name: 'Tour Van',
     category: 'Tour Van',
     image: '/images/WhatsApp Image 2025-10-30 at 20.25.10 (2).jpeg',
-    price: 150,
+    price: 22000,
     period: 'per day',
     features: {
       passengers: 16,
