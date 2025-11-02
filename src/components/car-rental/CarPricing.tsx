@@ -160,12 +160,6 @@ export default function CarPricing({ car }: CarPricingProps) {
             {additionalServices.map((service, index) => (
               <div key={index} className="flex justify-between items-center py-3 border-b border-neutral-200 last:border-b-0">
                 <span className="text-neutral-700">{service.service}</span>
-                <div className="text-right">
-                  <div className="font-semibold text-neutral-900">
-                    {formatKESPrice(service.price)}
-                  </div>
-                  <div className="text-xs text-neutral-500">{service.period}</div>
-                </div>
               </div>
             ))}
           </div>
