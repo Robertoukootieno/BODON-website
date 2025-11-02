@@ -4,12 +4,13 @@ import { motion } from 'framer-motion'
 import { Check, Star } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Link from 'next/link'
+import { formatKESPrice } from '@/lib/utils'
 
 const pricingPlans = [
   {
     name: 'Compact',
     description: 'Perfect for city driving and tight spaces',
-    price: 'KES 4,500',
+    price: 30,
     period: 'per day',
     popular: false,
     vehicles: ['Toyota Vitz', 'Suzuki Alto', 'Hyundai i10'],
@@ -25,7 +26,7 @@ const pricingPlans = [
   {
     name: 'Economy',
     description: 'Perfect for city driving and short trips',
-    price: 'KES 5,000',
+    price: 33,
     period: 'per day',
     popular: false,
     vehicles: ['Toyota Corolla', 'Nissan Sunny', 'Suzuki Swift'],
@@ -41,7 +42,7 @@ const pricingPlans = [
   {
     name: 'Sedan',
     description: 'Comfortable sedan with modern features',
-    price: 'KES 6,500',
+    price: 43,
     period: 'per day',
     popular: false,
     vehicles: ['Toyota Corolla Axio (E160)', 'Honda Civic', 'Mazda 3'],
@@ -57,7 +58,7 @@ const pricingPlans = [
   {
     name: 'MPV',
     description: 'Ideal for families and group travel',
-    price: 'KES 8,000',
+    price: 53,
     period: 'per day',
     popular: true,
     vehicles: ['Toyota Voxy', 'Honda Odyssey', 'Nissan Serena'],
@@ -74,7 +75,7 @@ const pricingPlans = [
   {
     name: 'Tour Van',
     description: 'Perfect for group tours and large parties',
-    price: 'KES 22,000',
+    price: 147,
     period: 'per day',
     popular: false,
     vehicles: ['Tour Van', 'Mercedes Sprinter', 'Isuzu Coach'],
@@ -150,7 +151,7 @@ export default function CarRentalPricing() {
                 </p>
                 <div className="mb-4">
                   <span className="text-4xl font-bold text-primary-600">
-                    {plan.price}
+                    {formatKESPrice(plan.price)}
                   </span>
                   <span className="text-neutral-500 ml-2">
                     {plan.period}
@@ -201,7 +202,6 @@ export default function CarRentalPricing() {
             {additionalServices.map((service, index) => (
               <div key={index} className="flex justify-between items-center p-4 bg-neutral-50 rounded-xl">
                 <span className="text-neutral-700 font-medium">{service.name}</span>
-                <span className="text-primary-600 font-bold">{service.price}</span>
               </div>
             ))}
           </div>
