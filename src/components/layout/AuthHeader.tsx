@@ -46,9 +46,15 @@ export default function AuthHeader() {
 
   const fetchCurrentUser = async () => {
     try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 5000) // 5 second timeout
+
       const response = await fetch('/api/auth/me', {
         credentials: 'include',
+        signal: controller.signal,
       })
+
+      clearTimeout(timeoutId)
 
       if (response.ok) {
         const data = await response.json()
@@ -57,7 +63,11 @@ export default function AuthHeader() {
         setUser(null)
       }
     } catch (error) {
-      console.error('Error fetching user:', error)
+      if (error instanceof Error && error.name === 'AbortError') {
+        console.warn('User fetch timeout')
+      } else {
+        console.error('Error fetching user:', error)
+      }
       setUser(null)
     } finally {
       setLoading(false)
