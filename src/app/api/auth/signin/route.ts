@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { signInSchema } from '@/lib/validations/auth'
-import { verifyPassword, generateToken, setAuthCookie } from '@/lib/auth/utils'
+import { verifyPassword, generateToken } from '@/lib/auth/utils'
 
 // Mark this route as dynamic to prevent static generation
 export const dynamic = 'force-dynamic'

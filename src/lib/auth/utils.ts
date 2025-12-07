@@ -59,8 +59,8 @@ export function verifyToken(token: string): JWTPayload | null {
 /**
  * Set authentication cookie
  */
-export function setAuthCookie(token: string) {
-  const cookieStore = cookies()
+export async function setAuthCookie(token: string) {
+  const cookieStore = await cookies()
   cookieStore.set(AUTH_CONFIG.COOKIE_NAME, token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
@@ -73,9 +73,9 @@ export function setAuthCookie(token: string) {
 /**
  * Get authentication token from cookies
  */
-export function getAuthToken(): string | null {
+export async function getAuthToken(): Promise<string | null> {
   try {
-    const cookieStore = cookies()
+    const cookieStore = await cookies()
     const token = cookieStore.get(AUTH_CONFIG.COOKIE_NAME)
     return token?.value || null
   } catch (error) {
@@ -103,8 +103,8 @@ export function getAuthTokenFromRequest(request: NextRequest): string | null {
 /**
  * Remove authentication cookie
  */
-export function removeAuthCookie() {
-  const cookieStore = cookies()
+export async function removeAuthCookie() {
+  const cookieStore = await cookies()
   cookieStore.delete(AUTH_CONFIG.COOKIE_NAME)
 }
 
@@ -113,7 +113,7 @@ export function removeAuthCookie() {
  */
 export async function getCurrentUser(): Promise<AuthUser | null> {
   try {
-    const token = getAuthToken()
+    const token = await getAuthToken()
     if (!token) return null
 
     const payload = verifyToken(token)
