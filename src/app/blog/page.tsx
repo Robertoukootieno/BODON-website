@@ -5,6 +5,9 @@ import BlogGrid from '@/components/sections/BlogGrid'
 import BlogCategories from '@/components/sections/BlogCategories'
 import BlogNewsletter from '@/components/sections/BlogNewsletter'
 
+// Render dynamically to avoid build timeouts with client components
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Blog - Bodon Expedition Kenya',
   description: 'Discover Kenya through our travel blog. Get expert tips, destination guides, wildlife insights, and cultural stories from our experienced expedition team.',

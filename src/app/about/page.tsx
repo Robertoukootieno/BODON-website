@@ -8,6 +8,9 @@ import AboutStats from '@/components/sections/AboutStats'
 import AboutMission from '@/components/sections/AboutMission'
 import CallToAction from '@/components/sections/CallToAction'
 
+// Render dynamically to avoid build timeouts with client components
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'About Us - Bodon Expedition Kenya',
   description: 'Learn about Bodon Expedition Kenya, our story, mission, values, and the passionate team behind Kenya\'s premier safari and adventure expedition company.',

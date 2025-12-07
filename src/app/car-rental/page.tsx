@@ -6,6 +6,9 @@ import CarRentalFeatures from '@/components/sections/CarRentalFeatures'
 import CarRentalPricing from '@/components/sections/CarRentalPricing'
 import CallToAction from '@/components/sections/CallToAction'
 
+// Render dynamically to avoid build timeouts with client components
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Car Rental Services - Bodon Expedition Kenya',
   description: 'Rent quality vehicles in Kenya with Bodon Expedition. Choose from our fleet of cars, SUVs, vans, and 4WD vehicles for your adventure or business needs.',

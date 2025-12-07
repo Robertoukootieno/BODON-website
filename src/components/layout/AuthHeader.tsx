@@ -37,8 +37,13 @@ export default function AuthHeader() {
   // Fetch current user on component mount
   useEffect(() => {
     // Only fetch if we're in the browser (not during build)
-    if (typeof window !== 'undefined') {
-      fetchCurrentUser()
+    // Also check that we have a valid window object and document
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      // Add a small delay to ensure the component is mounted
+      const timer = setTimeout(() => {
+        fetchCurrentUser()
+      }, 100)
+      return () => clearTimeout(timer)
     } else {
       setLoading(false)
     }

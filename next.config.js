@@ -33,8 +33,8 @@ const nextConfig = {
     // Prevent Next.js from trying to collect page data for API routes
     instrumentationHook: true,
   },
-  // Disable static optimization for routes that require runtime data
-  staticPageGenerationTimeout: 0,
+  // Set reasonable timeout for static page generation (60 seconds)
+  staticPageGenerationTimeout: 60,
   // Prevent data collection for API routes
   onDemandEntries: {
     maxInactiveAge: 60 * 1000,

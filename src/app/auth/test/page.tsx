@@ -6,6 +6,9 @@ import Link from 'next/link'
 import toast from 'react-hot-toast'
 import Button from '@/components/ui/Button'
 
+// Render dynamically to avoid build timeouts
+export const dynamic = 'force-dynamic'
+
 interface User {
   id: string
   email: string
